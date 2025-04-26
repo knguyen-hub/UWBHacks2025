@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://clw4l7a8if4w3"]
+[gd_scene load_steps=4 format=3 uid="uid://clw4l7a8if4w3"]
 
+[ext_resource type="Script" uid="uid://dm7ga2x56j0kt" path="res://kaitlin/test_2.gd" id="1_lbe0c"]
 [ext_resource type="PackedScene" uid="uid://cpdy0w1wcne" path="res://kaitlin/paper.tscn" id="1_ut62t"]
 [ext_resource type="PackedScene" uid="uid://tnaanu1nhxny" path="res://kaitlin/stamp.tscn" id="2_lbe0c"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_lbe0c")
 
 [node name="left_paper" parent="." instance=ExtResource("1_ut62t")]
 position = Vector2(167, 453)

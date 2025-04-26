@@ -7,6 +7,7 @@
 size = Vector2(138, 138)
 
 [node name="paper" type="StaticBody2D" groups=["dropable"]]
+input_pickable = true
 script = ExtResource("1_g262j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["dropable"]]
@@ -15,3 +16,8 @@ shape = SubResource("RectangleShape2D_o0dqg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_o0dqg")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_shape_entered" from="." to="." method="_on_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="." to="." method="_on_mouse_shape_exited"]

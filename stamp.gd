@@ -6,6 +6,8 @@ var body_ref
 var offset : Vector2
 var initialPos : Vector2
 
+var has_been_dropped = false
+
 func _process(delta):
 	if draggable:
 		if Input.is_action_just_pressed("click"):
@@ -21,6 +23,7 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
+				has_been_dropped = true
 			else:
 				tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
 
