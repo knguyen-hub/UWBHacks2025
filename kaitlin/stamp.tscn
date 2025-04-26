@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://tnaanu1nhxny"]
+
+[ext_resource type="Script" uid="uid://b1am6yxu388fw" path="res://stamp.gd" id="1_avyox"]
+[ext_resource type="Texture2D" uid="uid://dtxxuv70cjwdx" path="res://kaitlin/Stamp.png" id="2_486kg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mjtm"]
+size = Vector2(125, 132)
+
+[node name="stamp" type="Node2D"]
+script = ExtResource("1_avyox")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2, 0)
+texture = ExtResource("2_486kg")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(504, 293)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-507, -281)
+shape = SubResource("RectangleShape2D_7mjtm")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
