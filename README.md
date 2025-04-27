@@ -1,4 +1,4 @@
-# UWBHacks2025
+# Boom City
 
 ## Inspiration
 As students living in the Seattle area, we have witnessed firsthand the problems caused by urban sprawl. Urban sprawl is often characterized with rapid expansion of low-density residential housing, single-use zoning, and sole reliance on private automobiles for transportation. It is correlated with higher energy use, pollution, traffic, and lower community cohesiveness. In addition, urban sprawl contributes to natural habitat loss and wildlife destruction. 
