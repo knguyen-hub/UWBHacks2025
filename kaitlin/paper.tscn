@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://cef26a3x082pn" path="res://kaitlin/paperleft.png" id="1_o0dqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o0dqg"]
-size = Vector2(138, 138)
+size = Vector2(150, 170)
 
 [node name="paper" type="StaticBody2D" groups=["dropable"]]
 input_pickable = true
 script = ExtResource("1_g262j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["dropable"]]
-position = Vector2(-4, 0)
+position = Vector2(-4, 3)
 shape = SubResource("RectangleShape2D_o0dqg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

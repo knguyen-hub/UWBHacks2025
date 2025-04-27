@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dtxxuv70cjwdx" path="res://kaitlin/Stamp.png" id="2_486kg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mjtm"]
-size = Vector2(125, 132)
+size = Vector2(54, 112)
 
 [node name="stamp" type="Node2D"]
 script = ExtResource("1_avyox")
@@ -18,7 +18,7 @@ texture = ExtResource("2_486kg")
 position = Vector2(504, 293)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-507, -281)
+position = Vector2(-510, -281)
 shape = SubResource("RectangleShape2D_7mjtm")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

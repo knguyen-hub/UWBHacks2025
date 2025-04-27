@@ -3,8 +3,6 @@ extends Node2D
 var decision_made = false
 
 func _ready():
-	$paper3.flip_horiz()
-	$paper4.flip_horiz()
 	dialogue1("Your city is plagued by the current housing crisis, and a rise in remote work in local companies have left many vacant office buildings in the city. Choose a solution that best addresses the problem while abiding by smart growth principles")
 
 func _process(delta):
@@ -34,6 +32,7 @@ func _process(delta):
 	# when the stamp has been dropped
 	if stamp.has_been_dropped and not decision_made:
 		decision_made = true
+		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		if stamp.body_ref == paper1:
 			dialogue1("Good choice Mrs Mayor! This decision helps solve the problem of a lack of affordable housing and solves the problem of the empty office buildings not being used")
 		else:
@@ -53,4 +52,4 @@ func dialogue1(text_: String):
 	Dialogic.start(timeline)
 
 func _on_timeline_ended():
-	get_tree().change_scene_to_file('res://kaitlin/yarn_scene.tscn')
+	get_tree().change_scene_to_file('res://kaitlin/scenario_2.tscn')
