@@ -3,6 +3,8 @@ extends Node2D
 var decision_made = false
 
 func _ready():
+	var sprawler = $sprawler/AnimatedSprite2D
+	sprawler.play("2 hearts")
 	dialogue1("The city’s annual traffic report has come in and reports increased traffic accidents, traffic levels, and pedestrian deaths. Propose a solution that would be best to solve the problem.")
 
 func _process(delta):
@@ -34,6 +36,11 @@ func _process(delta):
 		decision_made = true
 		if stamp.body_ref == paper3:
 			dialogue1("Good choice Mrs Mayor! Personal cars have a much higher accident rate than public transportation. Investing in public transportation creates safer roads, less traffic, and better air quality.")
+			var sprawler = $sprawler/AnimatedSprite2D
+			var sprawler_real = $sprawler
+			sprawler_real.flash()
+			await get_tree().create_timer(2.0).timeout
+			sprawler.play("1 heart")
 		else:
 			dialogue1("That is a choice for sure!")
 		

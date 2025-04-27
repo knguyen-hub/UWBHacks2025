@@ -63,7 +63,7 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="urban sprawler" type="Node2D"]
+[node name="urban_sprawler" type="Node2D"]
 script = ExtResource("1_lt2gs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -72,3 +72,5 @@ position = Vector2(327, 205.5)
 scale = Vector2(3.54054, 3.5)
 sprite_frames = SubResource("SpriteFrames_acfn5")
 animation = &"3 hearts"
+frame = 1
+frame_progress = 0.305106

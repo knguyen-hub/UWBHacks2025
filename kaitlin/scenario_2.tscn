@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://doweqob2otke5"]
+[gd_scene load_steps=6 format=3 uid="uid://doweqob2otke5"]
 
 [ext_resource type="Script" uid="uid://ddcvc5nywcb0s" path="res://kaitlin/scenario_2.gd" id="1_1528s"]
 [ext_resource type="PackedScene" uid="uid://cpdy0w1wcne" path="res://kaitlin/paper.tscn" id="1_ax1ms"]
 [ext_resource type="PackedScene" uid="uid://tnaanu1nhxny" path="res://kaitlin/stamp.tscn" id="2_1528s"]
 [ext_resource type="Texture2D" uid="uid://nh2of5n36axe" path="res://kaitlin/Mayors_Office_Updated.png" id="2_ngay5"]
+[ext_resource type="PackedScene" uid="uid://ctxeqkgkr6p31" path="res://reann(2)/urban_sprawler.tscn" id="5_hjiln"]
 
 [node name="scenario2" type="Node2D"]
 script = ExtResource("1_1528s")
@@ -26,3 +27,6 @@ position = Vector2(1028, 490)
 
 [node name="stamp" parent="." instance=ExtResource("2_1528s")]
 position = Vector2(1075, 307)
+
+[node name="sprawler" parent="." instance=ExtResource("5_hjiln")]
+position = Vector2(227, -40)

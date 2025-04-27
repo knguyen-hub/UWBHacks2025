@@ -3,6 +3,8 @@ extends Node2D
 var decision_made = false
 
 func _ready():
+	var sprawler = $sprawler/AnimatedSprite2D
+	sprawler.play("3 hearts")
 	dialogue1("Your city is plagued by the current housing crisis, and a rise in remote work in local companies have left many vacant office buildings in the city. Choose a solution that best addresses the problem while abiding by smart growth principles")
 
 func _process(delta):
@@ -35,6 +37,11 @@ func _process(delta):
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		if stamp.body_ref == paper1:
 			dialogue1("Good choice Mrs Mayor! This decision helps solve the problem of a lack of affordable housing and solves the problem of the empty office buildings not being used")
+			var sprawler = $sprawler/AnimatedSprite2D
+			var sprawler_real = $sprawler
+			sprawler_real.flash()
+			await get_tree().create_timer(2.0).timeout
+			sprawler.play("2 hearts")
 		else:
 			dialogue1("Ah yes")
 		
@@ -52,4 +59,5 @@ func dialogue1(text_: String):
 	Dialogic.start(timeline)
 
 func _on_timeline_ended():
+	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_file('res://kaitlin/scenario_2.tscn')
