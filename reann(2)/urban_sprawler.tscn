@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://ctxeqkgkr6p31"]
+
+[ext_resource type="Script" uid="uid://m0aq5iwgqp67" path="res://reann(2)/urban_sprawler.gd" id="1_lt2gs"]
+[ext_resource type="Texture2D" uid="uid://vg5wuh5ct8wc" path="res://reann(2)/urbansprawler.png" id="1_pjyc7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lt2gs"]
+atlas = ExtResource("1_pjyc7")
+region = Rect2(0, 196, 74, 98)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbntp"]
+atlas = ExtResource("1_pjyc7")
+region = Rect2(74, 196, 74, 98)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmkf4"]
+atlas = ExtResource("1_pjyc7")
+region = Rect2(0, 98, 74, 98)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymmbq"]
+atlas = ExtResource("1_pjyc7")
+region = Rect2(74, 98, 74, 98)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0l87r"]
+atlas = ExtResource("1_pjyc7")
+region = Rect2(0, 0, 74, 98)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvhyu"]
+atlas = ExtResource("1_pjyc7")
+region = Rect2(74, 0, 74, 98)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_acfn5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lt2gs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbntp")
+}],
+"loop": true,
+"name": &"1 heart",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmkf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymmbq")
+}],
+"loop": true,
+"name": &"2 hearts",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0l87r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvhyu")
+}],
+"loop": true,
+"name": &"3 hearts",
+"speed": 2.0
+}]
+
+[node name="urban sprawler" type="Node2D"]
+script = ExtResource("1_lt2gs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(327, 205.5)
+scale = Vector2(3.54054, 3.5)
+sprite_frames = SubResource("SpriteFrames_acfn5")
+animation = &"3 hearts"
