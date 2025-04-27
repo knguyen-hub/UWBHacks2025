@@ -3,7 +3,7 @@ extends Node2D
 var decision_made = false
 
 func _ready():
-	await get_tree().create_timer(10.0).timeout
+	await get_tree().create_timer(2.0).timeout
 	var sprawler = $sprawler/AnimatedSprite2D
 	sprawler.play("3 hearts")
 	dialogue1("Your city is burdened by the current housing crisis, and a rise in remote work has left many buildings vacant downtown. Choose a solution that best addresses the problem using smart growth")

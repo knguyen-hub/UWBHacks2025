@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvrcxcbtl3j7x"]
+
+[ext_resource type="Script" uid="uid://bkwxq66snca25" path="res://help.gd" id="1_4abyq"]
+[ext_resource type="Texture2D" uid="uid://dhgpwe0dhbudk" path="res://kaitlin/Boom City Info Slideshow (1).png" id="2_l2nui"]
+
+[node name="help" type="Node2D"]
+script = ExtResource("1_4abyq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_l2nui")
+centered = false
+
+[node name="back" type="Button" parent="."]
+offset_left = 73.0
+offset_top = 542.0
+offset_right = 118.0
+offset_bottom = 573.0
+text = "Back"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

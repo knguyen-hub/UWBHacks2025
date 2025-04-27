@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://csflex7f837cu"]
+
+[ext_resource type="Texture2D" uid="uid://c51wd7s2skj6w" path="res://kaitlin/Boom City Info Slideshow.png" id="1_ots34"]
+[ext_resource type="Script" uid="uid://n16wyxe1i5hl" path="res://start.gd" id="1_qn1rc"]
+
+[node name="start" type="Node2D"]
+script = ExtResource("1_qn1rc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_ots34")
+centered = false
+
+[node name="start_button" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 469.0
+offset_right = 880.0
+offset_bottom = 500.0
+text = "Start"
+
+[node name="quit_button" type="Button" parent="."]
+offset_left = 1064.0
+offset_top = 467.0
+offset_right = 1106.0
+offset_bottom = 498.0
+text = "Quit"
+
+[node name="help_button" type="Button" parent="."]
+offset_left = 954.0
+offset_top = 467.0
+offset_right = 998.0
+offset_bottom = 498.0
+text = "Help"
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="quit_button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="help_button" to="." method="_on_help_button_pressed"]
