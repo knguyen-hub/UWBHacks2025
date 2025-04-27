@@ -6,6 +6,10 @@ var mouse_in = false
 func _ready():
 	pass
 	
+	
+func flip_horiz():
+	scale.x = -1
+
 func _process(delta):
 	if mouse_in:
 		scale = Vector2(1.1, 1.1)
@@ -14,7 +18,7 @@ func _process(delta):
 			print('clicked')
 	else:
 		scale = Vector2(1, 1)
-	if global.is_dragging:
+	if global.is_dragging or mouse_in:
 		scale = Vector2(1.1, 1.1)
 	else:
 		scale = Vector2(1, 1)

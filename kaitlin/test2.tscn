@@ -7,11 +7,17 @@
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_lbe0c")
 
-[node name="left_paper" parent="." instance=ExtResource("1_ut62t")]
-position = Vector2(167, 453)
+[node name="paper1" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(86, 455)
 
-[node name="right_paper" parent="." instance=ExtResource("1_ut62t")]
-position = Vector2(909, 464)
+[node name="paper2" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(272, 414)
+
+[node name="paper3" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(858, 445)
+
+[node name="paper4" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(1041, 481)
 
 [node name="stamp" parent="." instance=ExtResource("2_lbe0c")]
-position = Vector2(558, 169)
+position = Vector2(1075, 307)

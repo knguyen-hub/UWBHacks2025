@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://doweqob2otke5"]
+
+[ext_resource type="Script" uid="uid://ddcvc5nywcb0s" path="res://kaitlin/scenario_2.gd" id="1_1528s"]
+[ext_resource type="PackedScene" uid="uid://cpdy0w1wcne" path="res://kaitlin/paper.tscn" id="1_ax1ms"]
+[ext_resource type="PackedScene" uid="uid://tnaanu1nhxny" path="res://kaitlin/stamp.tscn" id="2_1528s"]
+
+[node name="scenario2" type="Node2D"]
+script = ExtResource("1_1528s")
+
+[node name="paper1" parent="." instance=ExtResource("1_ax1ms")]
+position = Vector2(98, 508)
+
+[node name="paper2" parent="." instance=ExtResource("1_ax1ms")]
+position = Vector2(264, 470)
+
+[node name="paper3" parent="." instance=ExtResource("1_ax1ms")]
+position = Vector2(821, 475)
+
+[node name="paper4" parent="." instance=ExtResource("1_ax1ms")]
+position = Vector2(1013, 518)
+
+[node name="stamp" parent="." instance=ExtResource("2_1528s")]
+position = Vector2(1081, 351)

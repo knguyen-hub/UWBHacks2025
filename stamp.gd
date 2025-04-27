@@ -30,14 +30,14 @@ func _process(delta):
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.is_in_group('dropable'):
 		is_inside_dropable = false
-		body.modulate = Color(Color.MEDIUM_PURPLE, 0.7)
+		#body.modulate = Color(Color.MEDIUM_PURPLE, 0.7)
 		body_ref = body
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group('dropable'):
 		is_inside_dropable = true
-		body.modulate = Color(Color.REBECCA_PURPLE, 1)
+		#body.modulate = Color(Color.REBECCA_PURPLE, 1)
 		body_ref = body
 
 
