@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://csflex7f837cu"]
 
 [ext_resource type="Texture2D" uid="uid://c51wd7s2skj6w" path="res://kaitlin/Boom City Info Slideshow.png" id="1_ots34"]
-[ext_resource type="Script" uid="uid://n16wyxe1i5hl" path="res://start.gd" id="1_qn1rc"]
+[ext_resource type="Script" uid="uid://n16wyxe1i5hl" path="res://kaitlin/start.gd" id="1_qn1rc"]
 
 [node name="start" type="Node2D"]
 script = ExtResource("1_qn1rc")

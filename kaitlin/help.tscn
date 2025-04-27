@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bvrcxcbtl3j7x"]
 
-[ext_resource type="Script" uid="uid://bkwxq66snca25" path="res://help.gd" id="1_4abyq"]
+[ext_resource type="Script" uid="uid://bkwxq66snca25" path="res://kaitlin/help.gd" id="1_4abyq"]
 [ext_resource type="Texture2D" uid="uid://dhgpwe0dhbudk" path="res://kaitlin/Boom City Info Slideshow (1).png" id="2_l2nui"]
 
 [node name="help" type="Node2D"]

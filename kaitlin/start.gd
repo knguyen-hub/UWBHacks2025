@@ -10,4 +10,4 @@ func _on_quit_button_pressed() -> void:
 
 
 func _on_help_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://help.tscn")
+	get_tree().change_scene_to_file("res://kaitlin/help.tscn")
