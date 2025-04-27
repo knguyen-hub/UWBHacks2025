@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://clw4l7a8if4w3"]
+
+[ext_resource type="Script" uid="uid://dm7ga2x56j0kt" path="res://kaitlin/test_2.gd" id="1_lbe0c"]
+[ext_resource type="PackedScene" uid="uid://cpdy0w1wcne" path="res://kaitlin/paper.tscn" id="1_ut62t"]
+[ext_resource type="Texture2D" uid="uid://nh2of5n36axe" path="res://kaitlin/Mayors_Office_Updated.png" id="2_6xx13"]
+[ext_resource type="PackedScene" uid="uid://tnaanu1nhxny" path="res://kaitlin/stamp.tscn" id="2_lbe0c"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_lbe0c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577, 325)
+texture = ExtResource("2_6xx13")
+
+[node name="paper1" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(116, 464)
+
+[node name="paper2" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(391, 428)
+
+[node name="paper3" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(716, 461)
+
+[node name="paper4" parent="." instance=ExtResource("1_ut62t")]
+position = Vector2(1021, 493)
+
+[node name="stamp" parent="." instance=ExtResource("2_lbe0c")]
+position = Vector2(1075, 307)
