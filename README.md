@@ -15,6 +15,7 @@ One way to combat urban sprawl is by implementing something called "smart growth
 10) The design and construction of compact homes and businesses that use energy efficiently.
 
 (Source: https://explore.britannica.com/explore/savingearth/urban-sprawl)
+
 As game developers, we wanted to address the problem of urban sprawl through developing a game where the player has to face municipal problems and abide by the principles of smart growth. Through this game we hope to raise awareness on the issue of urban sprawl and communicate its importance to inspire action, and provide resources that people can use to get involved in their own communities. 
 
 ## What it does
